@@ -36,7 +36,7 @@ az role assignment create --assignee "<APP_ID>" --scope "/subscriptions/<SUBSCRI
 
 ### 1. Initialize Terraform
 
-After defining your provider in `main.tf`, run:
+After defining your provider in `main.tf`, and added your azure secrets to both variables.tf run:
 
 ```bash
 terraform init
