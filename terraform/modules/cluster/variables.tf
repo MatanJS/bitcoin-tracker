@@ -1,13 +1,11 @@
 variable "client_id" {
     type        = string
     description = "App ID"
-    default     = "225b1dd6-8cf4-423e-9d77-35e6636d0670"
 }
 
 variable "client_secret" {
     type        = string
     description = "Password"
-    default     = "_lI8Q~_NtCRbV5Kf2jqdD~wmU0HsvcbXf.XeecoX"
 }
 
 variable "rg_name" {
