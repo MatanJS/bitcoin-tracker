@@ -5,7 +5,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -25,7 +24,7 @@ public class BitcoinService {
         if (!started) {
             System.out.println("Starting...");
             started = true;
-            fetchPrice(); // initial call
+            fetchPrice();
         }
     }
 
