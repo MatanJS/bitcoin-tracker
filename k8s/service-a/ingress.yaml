@@ -11,7 +11,7 @@ spec:
     - host: bitcoin.tracker.com
       http:
         paths:
-          - path: /?(.*)
+          - path: /service-a/?(.*)
             pathType: ImplementationSpecific
             backend:
               service:

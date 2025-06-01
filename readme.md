@@ -54,7 +54,7 @@ terraform apply
 ```bash
 az login
 az account set --subscription "<your-subscription-name>"
-az aks get-credentials --resource-group <your-resource-group> --name <your-cluster-name>
+az aks get-credentials --resource-group <your-resource-group> --name <your-cluster-name>  # connect to the cluster and will allow you to run kubectl commands
 ```
 
 ---

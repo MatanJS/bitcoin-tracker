@@ -15,11 +15,13 @@ spec:
       labels:
         app: service-a
     spec:
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
       imagePullSecrets:
         - name: acr-secret
       containers:
         - name: service-a
-          image: mydefaultcontainerregistry1.azurecr.io/samples/service-a:1.0.1
+          image: mydefaultcontainerregistry1.azurecr.io/samples/service-a:1.0.4
           ports:
             - containerPort: 80
           livenessProbe:
